@@ -66,6 +66,7 @@ def waterfall(bridge: pd.DataFrame, title: str = "") -> go.Figure:
     ))
     fig.update_layout(title=title, height=440, margin=dict(t=60, b=10, l=10, r=10),
                       yaxis_title="USD", showlegend=False)
+    fig.update_xaxes(tickangle=-30)
     return fig
 
 
@@ -94,6 +95,8 @@ def auto_chart(ans: Answer):
         fig = px.bar(plot_df, x=x, y=ys, barmode="group", title=ans.title)
     else:
         return None
+    if spec.get("type") == "bar":
+        fig.update_xaxes(type="category")
     fig.update_layout(height=420, margin=dict(t=60, b=10, l=10, r=10), legend_title_text="")
     return fig
 

@@ -130,6 +130,8 @@ def offline_narrative(df: pd.DataFrame, title: str, metric: str | None = None) -
         return "No rows matched that question."
     num_cols = [c for c in df.columns if pd.api.types.is_numeric_dtype(df[c])]
     label_col = df.columns[0]
+    if label_col == "store_nbr":
+        df = df.assign(store_nbr="Store " + df["store_nbr"].astype(str))
     lines = [f"**{title}** — {len(df)} rows."]
     money_cols = [c for c in num_cols if not re.search(r"pct|margin|stores|months|items|price|nbr|year", c)]
     if metric in df.columns:
