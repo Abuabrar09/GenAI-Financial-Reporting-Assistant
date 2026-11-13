@@ -1,0 +1,20 @@
+# Data (Kaggle data is downloaded locally; sample data is regenerated automatically)
+data/raw/*
+!data/raw/README.md
+data/sample/
+data/processed/
+*.db
+
+# Secrets
+.env
+.streamlit/secrets.toml
+kaggle.json
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store

@@ -1,0 +1,14 @@
+{
+  "name": "FinBI Assistant",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "postCreateCommand": "pip install -r requirements.txt",
+  "forwardPorts": [8501],
+  "portsAttributes": { "8501": { "label": "Streamlit app", "onAutoForward": "openPreview" } },
+  "secrets": {
+    "ANTHROPIC_API_KEY": { "description": "Optional: Claude API key for AI answers" },
+    "OPENAI_API_KEY": { "description": "Optional: OpenAI API key (alternative)" },
+    "KAGGLE_USERNAME": { "description": "Kaggle username (for dataset download)" },
+    "KAGGLE_KEY": { "description": "Kaggle API key (for dataset download)" }
+  },
+  "customizations": { "vscode": { "extensions": ["ms-python.python", "qwtel.sqlite-viewer"] } }
+}
