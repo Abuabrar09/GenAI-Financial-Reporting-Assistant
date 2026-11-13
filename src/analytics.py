@@ -339,6 +339,7 @@ def template_narrative(a: dict) -> str:
         out.append("**What pulled profit down:**")
         out += [f"- {r.step}: {money(r.amount)}" for r in neg.head(3).itertuples()]
     if len(pos):
+        out.append("")
         out.append("**What offset it:**" if d_op < 0 else "**What drove the improvement:**")
         out += [f"- {r.step}: +{money(r.amount)}" for r in pos.head(3).itertuples()]
     out.append("")

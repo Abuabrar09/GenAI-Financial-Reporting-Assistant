@@ -99,7 +99,7 @@ def auto_chart(ans: Answer):
 
 
 def render_answer(ans: Answer, key: str) -> None:
-    st.markdown(ans.text)
+    st.markdown(ans.text.replace("$", r"\$"))
     fig = auto_chart(ans)
     if fig is not None:
         st.plotly_chart(fig, use_container_width=True, key=f"chart_{key}")
@@ -196,7 +196,7 @@ with tab_summary:
         st.caption(f"Compared with {a['prior'].label}")
         left, right = st.columns([1.1, 1])
         with left:
-            st.markdown(text)
+            st.markdown(text.replace("$", r"\$"))
             st.download_button("Download report (.md)", text, f"management_report_{period}.md")
         with right:
             st.plotly_chart(waterfall(a["bridge"], f"Operating profit bridge vs {a['prior'].label}"),
