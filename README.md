@@ -6,7 +6,7 @@ Ask finance questions about a supermarket chain in plain English, like *"Why did
 
 **Business outcome:** less manual monthly reporting, and business insights that non-technical managers can get on their own.
 
-> 🔗 **Live demo:** `https://<your-app>.streamlit.app` · **Data:** Kaggle – Corporación Favorita Store Sales (≈3M rows, 54 stores, 33 product families, 2013–2017)
+> 🔗 **Live demo:** [genai-finbi-abrar.streamlit.app](https://genai-finbi-abrar.streamlit.app) · **Data:** Kaggle – Corporación Favorita Store Sales (≈3M rows, 54 stores, 33 product families, 2013–2017)
 
 ---
 

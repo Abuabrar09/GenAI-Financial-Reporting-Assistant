@@ -9,7 +9,7 @@ Replace `<your-app>` with your Streamlit URL once it's deployed.
 - **Repository name:** `genai-financial-reporting-assistant`
 - **Description (About box):**
   Generative AI financial reporting & BI assistant. Ask "Why did operating profit decline?" in plain English and get SQL-grounded answers, profit bridges, charts and automated CFO summaries. Python · SQL · LLM API · Streamlit
-- **Website:** `https://<your-app>.streamlit.app`
+- **Website:** [genai-finbi-abrar.streamlit.app](https://genai-finbi-abrar.streamlit.app)
 - **Topics:** `generative-ai` `llm` `text-to-sql` `financial-analysis` `business-intelligence` `streamlit` `sql` `python` `fpa` `retail-analytics` `kaggle` `anthropic` `openai`
 - **Pin it** on your GitHub profile (Profile → Customize your pins).
 
@@ -35,8 +35,8 @@ Paste this project card into your `index.html` projects section, and adjust the 
     <li>SQLite star schema built by a chunked Python ETL; tested with pytest + GitHub Actions</li>
   </ul>
   <p>
-    <a href="https://<your-app>.streamlit.app" target="_blank">Live demo</a> ·
-    <a href="https://github.com/Abuabrar09/genai-financial-reporting-assistant" target="_blank">GitHub</a>
+    <a href="https://genai-finbi-abrar.streamlit.app" target="_blank">Live demo</a> ·
+    <a href="https://github.com/Abuabrar09/GenAI-Financial-Reporting-Assistant" target="_blank">GitHub</a>
   </p>
 </div>
 ```
@@ -81,8 +81,8 @@ Go to Profile → **Add profile section → Recommended → Add projects**.
 > The hardest part wasn't the LLM. It was making sure the AI never invents a number. The finance math is deterministic, and the LLM is only the storyteller.
 >
 > Stack: Python · SQL · Claude/OpenAI API · Streamlit
-> 🔗 Demo: https://<your-app>.streamlit.app
-> 💻 Code: https://github.com/Abuabrar09/genai-financial-reporting-assistant
+> 🔗 Demo: https://genai-finbi-abrar.streamlit.app
+> 💻 Code: https://github.com/Abuabrar09/GenAI-Financial-Reporting-Assistant
 >
 > #GenerativeAI #DataAnalytics #FinancialAnalysis #SQL #Python #BusinessIntelligence #FPandA
 
